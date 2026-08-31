@@ -1,0 +1,38 @@
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+    background-color: rgb(177, 204, 226);
+}
+#page-in-progress {
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+    
+}
+
+h1{
+    font-size: 70px;
+    color:rgb(28, 72, 110)
+}
+p{
+    font-size: 40px;
+}
+
