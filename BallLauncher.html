@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<title>Ball Launcher - Arcturus 2025</title>
+		<meta name="viewport" context="width=device-width, initial-scale=1.0"/> 
+        <link rel="stylesheet" href="pageStyle.css">
+        <!-- adding fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Anybody:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Bigshot+One&family=DM+Serif+Display&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Viga&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <header id="ballLaunch-header">
+        <h1 class="bigshot-one-regular">Ball Launcher</h1>
+        <h2 class="noto-sans-display">Arcturus: RoboBoat 2026</h2>
+    </header>
+
+    <main>
+        <section id="intro">
+        <h1 class="noto-sans-display">Relevant Skills</h1>
+        <section id="skills-list" class="noto-sans-display">
+            <p>Sheet metal fabrication</p>
+            <p>Motor Calculations</p>
+            <p>Onshape</p>
+        </section>
+    </section>
+
+    <section id="project-summary" class="noto-sans-display">
+        <h1>Project Summary</h1>
+        <p class="noto-sans-display"> Building a high speed ball launching mechanism for RoboBoat 2025 alongside two other Arcturus members. The mechanism consists of two motor driven wheels that launch the ball, a lead screw driven loading mechanism and a sheet metal case for ball containment and integration with the turret.</p>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1> System Design</h1>
+        <div class="two-col">
+            <img src="launcher content/tennis ball launcher.webp">
+            <div>
+                <p>Our starting point for this design was tennis ball launchers, which compress the ball slightly between two wheels as they rotate in the direction of launching.</p>
+                <p>With this concept as the basis of the design, we seperated the design into three modules:</p>
+                <ol>
+                    <li>Launching</li>
+                    <li>Loading</li>
+                    <li>Integration</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1>Launching Module</h1>
+        <p>Launching was our most critical module, so we started with this mechanism first. We began with a simple prototype with parts laying around the workshop and laser cut acrylic disks:</p>
+        <div class="two-col">
+            <img src="launcher content/scrap launcher.png">
+            <div>
+                <p>Here we played with a thin disk wrapped with a rubber band for additional grip. This gave us a general sense of intuition and the first set of problems to tackle:</p>
+                <ol>
+                    <li>How much compression between the wheels is necessary?</li>
+                    <li>What is the ideal wheel morphology?</li>
+                    <li>What speed motor do we need?</li>
+                </ol>
+                <p>the first two we could very easily test for experimentally, and the last is a calculation relating the rotational velocity of the wheel to the velocity of the ball.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1>Loading Module</h1>
+        <p>we had a few options for loading, all of which needed to account for the rocking of the boat and ensure that only one ball was launched at a time. This is especially important since we are only allowed to load 3 racquetballs and will need to launch all 3.</p>
+        <div class="two-col">
+            <figure>
+                <img src="launcher content/conveyer sketch.webp">
+                <figcaption>conveyor belt loading</figcaption>
+            </figure>
+            <figure>
+                <img src="launcher content/leadscrew.png">
+                <figcaption>lead screw loading</figcaption>
+            </figure>
+        </div>
+        <p>We decided upon lead screw loading, as that would allow us greater control with simpler and more reliable mechanical implementation.</p>
+    </section>
+
+    <section class="section noto-sans-display">
+        <h1>First Round Fabrication</h1>
+        <div class="two-col">
+            <img src="launcher content/first launcher.jpg">
+            <div>
+                <p>Our first iteration used inverted curve wheels to maximize surface area in contact with the ball.</p>
+                <p>Although theoretically the ideal wheel shape, we found that any amount of fabrication error was instantly obvious as the height of the wheels was critical for proper launching. Because of the launching pad shape we needed to bend and then unbend our metal which resulted in an uneven platform</p>
+                <p>We ended up losing a lot of energy during launching because of those small height differences.</p>
+                <p>so we pivoted to flat profiled wheels</p>
+            </div>
+        </div>
+        <p>After switching to flat profile wheels and L-brackets for the wings of the launching pad, we had our final launch module:</p>
+        
+        <div class="two-col">
+            <img src="launcher content/launcher gif1.webp">
+            <div>
+                <img src="launcher content/launcher gif2.webp">
+                <p>Achieved ~12ft of useable launching distance with flat profiled wheels.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1>Integration</h1>
+        <img src="launcher content/launcher in sysmte.webp">
+        <p>
+            A lead screw mounted at the top of the cover, connected to a wooden slab that pushes the balls along. For loading detection we opted for a time of flight sensor situated on the launching pad between the wheels.
+        </p>
+        <p>for integration to the turret we used two sheet metal plates with a series of holes so we can mechanically adjust the angle as we optimize and test.</p>
+        <div class="two-col">
+            <img src="launcher content/final launcher.webp">
+            <div>
+                <p>Above the cover we mounted the camera used for target detection and aiming (in yellow).</p>
+                <p>The wooden platform with gears below is the turret which controls the angle of the launcher for aiming.</p>
+                <p>Directly below the launching pad is the mounting for the water gun which is connected to a pump in the back of the boat.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1>Takeaways and Final Thoughts</h1>
+        <p>Joining Arcturus and building this ball launcher alongside two students who were also relatively new to mechanical engineering gave me the unique opportunity to really build an intuition through trial and error. This is experience is one of the bigger contributors to my switching majors which I’m beyond grateful for!</p>
+        <ul>
+            <li>Documentation! – This is where I learned to (at minimum) take pictures and caption them at each step of the design process. Even assembling this portfolio entry was needlessly difficult.</li>
+            <li>Build Refinement – The ball launcher you see on the boat is actually the third functional unit we built, once the details were flushed out, we focused on perfecting our fabrication methodology which resulted in a more polished and reliable final product.</li>
+        </ul>
+    </section>
+    </main>
+
+
+    </body>
