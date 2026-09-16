@@ -1,38 +1,309 @@
+/* fonts */
+.viga-regular {
+  font-family: "Viga", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.bigshot-one-regular {
+  font-family: "Bigshot One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.dm-serif-display-regular {
-  font-family: "DM Serif Display", serif;
+
+/* can modfy weight and style */
+.anybody { 
+  font-family: "Anybody", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.noto-sans-display{
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
-
+/* resetting so theres no default spacing */
 body{
-    background-color: rgb(177, 204, 226);
-}
-#page-in-progress {
-    background-color: white;
-    width: 50%;
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px;
-    border-radius: 50px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
-    
+    margin: 0px;
+    padding: 0px;
 }
 
-h1{
-    font-size: 70px;
-    color:rgb(28, 72, 110)
+/* page-wide specs */
+
+.center{
+    text-align: center;
 }
-p{
-    font-size: 40px;
+
+.left{
+text-align: left;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*  opening page  */
+#page-heading{
+    padding: 0;
+    margin: 0px;
+
+    background-image: url("paint booth.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: flex-start; 
+    height: 70vh;
+    color: #F5F5F0;
+
+    text-shadow: 2px 2px 10px rgba(32, 14, 2, 0.614);
+
+    position: relative;
+}
+
+#page-heading::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(15, 20, 25, 0.30);
+
+    z-index: 0;
+}
+#page-heading > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+div h1{
+    /* color: #ffb100; */
+
+    font-size: 7rem;
+    padding: 0;
+    margin: 0;
+}
+
+div h1:first-of-type{
+    padding-top: 15vh;
+    font-size: 15rem;
+}
+
+
+ 
+/* navigation bar  */
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color:whitesmoke;
+    padding:2vh 3vw;
+    margin: 0.2vh 0.2vw;
+    background-color: #b0536f;
+    border-radius: 10px;
+    transition: all 0.1s;
+}
+
+nav a:hover{
+    transform: scale(1.07);
+    background-color:  #a29a8c;
+    background-color: #61293a;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+nav{
+    padding:1vh 1vw;
+    margin: 0px;
+    background-color: #8d4259;
+}
+
+#about-me{
+    background-color: #665b47;
+    background-color: #dbe7a0;
+    display: flex;
+    align-items: center;  
+    padding: 10vh 6vw;
+}
+
+
+#resume{
+   background-color: #61293a;
+   margin: 0;
+   padding: 0;
+}
+
+img{
+    width: 35vw;
+    border-radius: 10px;
+   
+}
+
+
+/*  */
+#intro{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-left: 3px solid #61293a;
+}
+#intro-title{
+    font-size: 5.5rem;
+    color: #61293a;
+    padding-left: 3vw;
+    padding-right: 2vw;
+
+}
+
+
+#blurb{
+    font-size: 2rem;
+    color: #61293a;
+    padding-left: 3vw;
+}
+
+/*  */
+
+#portfolio-section{
+ background-color: #dbe7a0;
+}
+
+#portfolio{
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+#portfolio a img{
+    width: 28vw;
+    transition: all 0.1s;
+    margin-bottom: 3vh;
+}
+
+#portfolio a img:hover, .OCE-portfolio:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 15px #2f181f8c;
+}
+
+#projects-title{
+    padding: 1vh 3vw;
+    margin:0 3vw;
+    font-size: 3rem;
+    color: #61293a;
+    color: #665b47;;
+    border-left: 3px solid #665b47;  
+}
+
+.OCE-portfolio{
+    text-decoration: none;
+    background-color: #7b7366;
+    border-radius: 10px;
+    transition: all 0.1s;
+    color: whitesmoke;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+    width: 22vw;
+    height: 80%;
+}
+
+#resume{
+    background-color: #61293a;
+    background-color: #b0536f;
+    padding: 5vh 2vw;
+}
+
+#resume #resume-title{
+    padding: 2vh 3vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    font-size: 3rem;
+    color:whitesmoke;
+    border-left: 3px solid whitesmoke;  
+}
+
+#resume h2{
+    padding: 1 3vw;
+   
+    font-size: 3rem;
+    color: whitesmoke;
+    border-left: 3px solid whitesmoke;
+}
+
+#resume h3{
+    font-size: 2rem;
+    color: whitesmoke;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+#resume h4{
+    font-size: 1.4rem;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+#resume li{
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+#resume h5{
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+#education-header{
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+}
+
+#education-subheader h5{
+    font-size: 1rem;
+    margin-bottom: 3vh;
+}
+
+.resume-entry-header{
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#resume .resume-entry h5 {
+    font-size: 1rem;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+
+}
+#resume-content{
+    padding:4vh 8vw;
+    background-color:#61293a;
+    border-radius: 15px;
+}
+
+
+
+
+
 

@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<title>Benchtop OCE</title>
+		<meta name="viewport" context="width=device-width, initial-scale=1.0"/> 
+        <link rel="stylesheet" href="pageStyle.css">
+
+        <!-- adding fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Anybody:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Bigshot+One&family=DM+Serif+Display&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Viga&display=swap" rel="stylesheet">
+        
+        <!-- Load MathJax Script -->
+        <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js">
+        </script>
+    </head>
+     <body>
+        <header id="oce-header">
+            <h1 class="bigshot-one-regular">Nondestructive Benchtop OCE System</h1>
+            <h2 class="noto-sans-display">Wellman Center for Photomedicine - CBORT</h2>
+        </header>
+        <main>
+            <section id="intro">
+            <h1 class="noto-sans-display">Relevant Skills</h1>
+                <section id="skills-list" class="noto-sans-display">
+                    <p class="center">Image Processing (MATlab)</p>
+                    <p class="center">Biological Sample Handling</p>
+                    <p class="center">Protocol Design</p>
+                    <p class="center">SLA Printing</p>
+                    <p class="center">Design for Research Environment</p>
+                </section>
+            </section>
+
+            <section class="section noto-sans-display">
+                <h1>Motivation</h1>
+                <p>Biological research benefits from the existence of high complexity in vitro models – the better the in vitro model is, the greater the scientists ability to experiment in more accurate conditions prior to involving live samples. Organoids are one such model, these three dimensional, multicellular, self organizing masses are the basis for of a rapidly expanding field. In essence, stem cells are guided through the differentiation process to produce complex tissues such as the following:</p>
+                <div class="two-col">
+                    <figure>
+                        <img src="CBORT content/brain organoid.png">
+                        <figcaption>Brain/eye organoids (Gabriel et al. 2021):
+These cells self organized into a mass of brain tissue, and later grew two light sensitive orbs, the precursors to eyes.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="CBORT content/lung organoid.png">
+                        <figcaption>Lung organoids (Leko et al. 2023):These cells self organize into lung buds, the embryonic stage of lung tissue</figcaption>
+                    </figure>
+                </div>
+                <p>As is clear in these images, these tissues introduce a new imaging problem, we cannot see inside them. There are many ways to work around this limitation, some labs opt for sacrificing their samples, others choose to focus on exterior traits, and some have looked to optical coherence tomography (OCT) to provide 3D imaging. However, some of these tissues are inherently load bearing or structural tissues such as cartilage, and require mechanical analysis, which OCT cannot provide. This, again, results in the need to sacrifice the sample, slice into thin segments, then subject them to traditional shear or torsional testing machinery.</p>
+                <p>Our proposition is to utilize Optical Coherence Elastography to measure the shear modulus of 3D tissues nondestructively.</p>
+            </section>
+            <hr>
+
+            <section class="section noto-sans-display">
+                <h1>Optical Coherence Elastography (OCE)</h1>
+                <p>OCE uses OCT to visualize the motion of shear waves across a material. In essence, a high frequency shear wave is excited in the tissue of interest, then we scan twice over each location and compare the measured waves (light) to each other, and use the shift to calculate the distance that portion of tissue has moved. This can then be used to calculate the speed of the tissues vibration. For a more math forward explanation feel free to look at <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-11-9-1285" target="_blank">this paper</a>, which my lab published recently and is the basis of the processing pipeline we currently use.</p>
+            </section>
+            <hr>
+
+            <section class="section noto-sans-display">
+                <h1>System Design & Results</h1>
+                <p>The core constraint for this system is the ability to excite high enough frequency shear waves to observe one and a half or so periods within the tissue. This difficulty arises from the nature of shear wave propagation:</p>
+                <div class="two-col">
+                    <div>
+                        <p>As tissue stiffness \( \mu_s\) increases, for the same density (which we generally estimate to equal the density of water) we see an increase in shear wave speed propogating through the material.</p>
+                        <div class="eq"> 
+                            $$ \mu_s = \rho c_s^2 $$
+                        </div>
+                    </div>
+                    <div>
+                        <p>As shear wave speed increases as a result of stiffer tissues, and wave length must decrease as a result of smaller tissues, we are required to push frequency higher.</p>
+                        <div class="eq"> 
+                            $$ c=f \lambda $$
+                        </div>
+                    </div>
+                </div>
+                <p>For similar applications in the eye we need a minimum of 1-2kHz of excitation, for the cartilage organoids we will be working with , we need a minimum of 6-7 kHz of excitation. These high frequency waves will attenuate much more quickly than their low frequency counterparts, introducing the need for higher amplitude excitation as well.</p>
+                <h2>Design Requirements</h2>
+                <ul>
+                    <li>Compatible with various sample shapes and sizes.</li>
+                    <li>Compatible with convenient imaging mediums for high throughput (non disruptive).</li>
+                    <li>Piezoelectric device must be protected from small amounts of liquid.</li>
+                </ul>
+                <p>Unfortunately this is all I can share until we complete our patent submission! In the meantime this abstract outlines the system results:</p>
+                <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/0/PC138550/Nondestructive-mechanical-phenotyping-of-3D-cartilage-tissue-models-for-osteoarthritis/10.1117/12.3080006.full" target="_blank"><img  class="abstract" style="margin: 3vw;" src="CBORT content/spie.png"></a>  
+            </section>
+        </main>
+    </body>
+   
+     
+             
+        
+    
+ 

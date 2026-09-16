@@ -1,0 +1,283 @@
+/* fonts */
+.viga-regular {
+  font-family: "Viga", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bigshot-one-regular {
+  font-family: "Bigshot One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* can modfy weight and style */
+.anybody { 
+  font-family: "Anybody", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.noto-sans-display{
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* ------------------------- page ---------------------------- */
+
+hr{
+    height: 2px;
+    background-color: #61293a;
+    border: none;
+    width: 85%;
+    margin: 8vh;
+}
+body{
+    background-color:#dbe7a0;
+    background-color:#d7ddb7;
+    padding: 0;
+    margin: 0;
+
+}
+
+.center{
+    text-align: center;
+}
+
+header{
+    padding: 0;
+    margin: 0;
+}
+h1{
+   font-size: 2rem; 
+}
+p{
+    font-size:1.4;
+}
+
+.right{
+    text-align: right;
+}
+
+#wickedTaahl-header{
+    padding:20vh;
+    margin:0;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("2007.JPG");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: top;   
+}
+
+#ballLaunch-header{
+    padding:20vh;
+    margin:0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("launcher content/fishnShips.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: top;   
+}
+
+#optimaPrime-header{
+    padding:20vh;
+    margin:0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Optima Content/teamfiling.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: bottom;   
+}
+#barbis-header{
+    padding:20vh;
+    margin:0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Barbis Content/barbis-ellen-patton.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+#oce-header{
+    padding:20vh;
+    margin:0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("CBORT content/oct example.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+#yoyo-header{
+    padding:20vh;
+    margin:0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("yoyos/yoyoWall.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+}
+
+#wickedTaahl-header h1, #ballLaunch-header h1, #optimaPrime-header h1, #barbis-header h1, #oce-header h1, #yoyo-header h1{
+    font-size: 10rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 10px rgba(32, 14, 2, 0.614);
+    margin: 0 0 3vh 0;
+}
+
+#wickedTaahl-header h2, #ballLaunch-header h2, #optimaPrime-header h2, #barbis-header h2, #oce-header h2, #yoyo-header h2{
+    margin: 0;
+    font-size: 4rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 10px rgba(32, 14, 2, 0.614);
+}
+
+#intro{
+    padding: 5vh;
+    color: #61293a;
+}
+
+#intro h1{
+    font-size: 2rem;
+}
+
+#skills-list{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+
+}
+
+main{
+    padding: 4vh 9vw;
+}
+
+#intro{
+    color: whitesmoke;
+    background-color: #b0536f;
+    /* border-radius: 15px; */
+    border-left:  #933e57 solid 20px; 
+    margin: 2, 0;
+    box-shadow:0px 0px 10px #61293a95;
+    border-radius: 10px;
+}
+
+#project-summary{
+    margin: 4vh, 0;
+    color: #61293a;
+}
+
+#project-summary h1{
+    font-size: 2rem;
+}
+
+#project-summary p{
+    font-size: 1.4rem;
+}
+
+#project-summary .bolded-p {
+    font-weight: 700;
+}
+
+.bolded-p{
+    font-weight: 700;
+}
+
+.section{
+    color: #61293a;
+}
+.section h1{
+    font-size: 2rem;
+}
+.section p{
+    font-size: 1.4rem;
+}
+.section li{
+    font-size: 1.4rem ;
+}
+
+#gameboard{
+    width: 45vw;
+}
+.two-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+}
+.two-col img{
+    width: 40vw;
+    border-radius: 10px;
+}
+
+.three-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 2vw;
+
+}
+
+.three-col figure img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+figcaption{
+    font-size: 1rem;
+    color: hsla(70, 36%, 13%, 0.828);
+    text-align: justify;
+}
+figure{
+    padding: 0;
+    margin: 0;
+}
+ img{
+    width:80vw;
+    border-radius: 15px;
+ }
+ .section #OptimaWiki{
+    display: inline-block;
+    text-decoration: none;
+    color:whitesmoke;
+    padding:1vh 1.5vw;
+    margin: 0.2vh 0.2vw;
+    background-color: #b0536f;
+    border-radius: 10px;
+    transition: all 0.1s;
+ }
+
+
+#OptimaWiki:hover{
+    transform: scale(1.07);
+    background-color:  #a29a8c;
+    background-color: #61293a;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.abstract{
+    transition: all 0.1s;
+}
+.abstract:hover{
+    transform: scale(1.07);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+
+}
+a{
+    color:#665b47;
+}
+
+a:hover{
+    color: #933e57;
+}
+
+.eq{
+    font-size: 2.1rem;
+    outline: 2px solid #61293a;
+}

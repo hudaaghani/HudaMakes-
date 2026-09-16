@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<title>Wicked Taahl - 2.007 Robot</title>
+		<meta name="viewport" context="width=device-width, initial-scale=1.0"/> 
+        <link rel="stylesheet" href="pageStyle.css">
+        <!-- adding fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Anybody:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Bigshot+One&family=DM+Serif+Display&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Viga&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <header id="wickedTaahl-header">
+        <h1 class="bigshot-one-regular">Wicked Taahl</h1>
+        <h2 class="noto-sans-display">Design & Manufacturing I (2.007) Robot</h2>
+    </header>
+
+    <main>
+    <section id="intro">
+        <h1 class="noto-sans-display">Relevant Skills</h1>
+        <section id="skills-list" class="noto-sans-display">
+            <p>Manual Mill</p>
+            <p>Manual Lathe</p>
+            <p>SolidWorks</p>
+            <p>Engineering Drawings</p>
+            <p>Rapid Prototyping</p>
+        </section>
+    </section>
+
+    <section id="project-summary" class="noto-sans-display">
+        <h1>Project Summary</h1>
+        <p class="noto-sans-display" >Built for MITs 2.007 (design and manufacturing I), and awarded the International Design Competition award. The robot consists of a telescoping arm mechanism, a spring-loaded deploying arm, and a motorized claw. All of this is integrated on a weighted chassis with two wheel drive, and is fully remote controlled.</p>
+        <p> <span class="bolded-p">Class Requirement: </span> Must submit a robot that is capable of scoring points.</p>
+        <p><span class="bolded-p">My Requirements</span> Submit and compete with a robot that is capable of completing the highest scoring task - collecting Elphaba's broom from a 51″ tall platform.</p>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1>Gameboard and Strategy</h1>
+        <div class="two-col">
+        <img id="gameboard"src="Wicked taahl content/gameboard.png">
+            <div>
+            <p>
+                The game board was "Wicked" themed, and my strategy was to grab the broom (step 1) and apply the 2x multiplier (step 2), which would be an interesting design challenge as well as a high scoring strategy at 300 points.
+            </p>
+            <p>
+                I broke down my robot into key modules:
+                <ol>
+                    <li>Drive</li>
+                    <li>Reach (most critical module)</li>
+                    <li>Grab</li>
+                </ol>
+            </p>
+            </div>
+        </div>
+    </section>
+     <hr>
+
+    <section class="section noto-sans-display">
+        <h1>Reach: Developing the Most Critical Module</h1>
+        <p>I spent some time loosely exploring the design space and using foam core to model the basic functionality of different mechanisms. Here are some design journal entries:</p>
+        <div class="two-col">
+            <img src="Wicked taahl content/journal entry 1.jpeg">
+            <img src="Wicked taahl content/journal entry 2.jpeg">
+        </div>
+        <p>I came to a few conclusions</p>
+        <ul>
+            <li>A telescoping arm mechanism is likely the most compact extension method I can reliably machine within the classes material limitations.</li>
+            <li>The broom being the highest scoring task, it is not unlikely I will need to compete agains someone who is also aiming for it, so a claw at the end of my extension system will give me strength and dexterity in competition which could make or break a game.</li>
+            <li> I need to be very aware of stability since my robot is extending 51″</li>
+        </ul>
+        
+
+        <div class="two-col">
+            <img src="Wicked taahl content/mass calc.webp">
+            <div>
+                <p>My calculations here show that I need a total robot mass of 6.26 lbs to prevent tipping, which is half the allowable robot mass</p>
+                <p>With these calculations in mind, I can machine a four arm telescoping system, and would need to deploy the claw separately to stay within the height limit.</p>
+            </div>
+        </div>
+        
+
+        <p>with these in mind I moved onto fabrication</p>
+        <div class="three-col">
+            <figure>
+                <img src="Wicked taahl content/milling.jpeg">
+                <figcaption>Machining! The telescoping arm module was made almost exclusively on the manual mill.</figcaption>
+            </figure>
+            <figure>
+                <img src="Wicked taahl content/test-telescope.gif">
+                <figcaption>Telescoping arm assembled and mounted onto temporary base plate to test integration with motor driven capstan.</figcaption>
+            </figure>
+            <figure>
+                <img src="Wicked taahl content/initial-springloading.gif">
+                <figcaption>Spring loaded arm deployment integrated, testing on game board and its looking good!</figcaption>
+            </figure>
+        </div>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1>Grab: Developing the Claw Module</h1>
+        <p>The claw is intended to give me a more controlled descent once I am in contact with the broom, the basis of the mechanism is a pair of linkages driven by a single motor.</p>
+
+        <div class="three-col">
+            <div class="right">
+                <p>I used a sketch in CAD with one degree of freedom to determine the lengths I would use for each of the links</p>
+                <p>This will be laser cut out of aluminum sheet metal, and each piece will consist of two layers riveted together increase thickness and rigidity.</p>
+            </div>
+            <figure>
+                <img src="Wicked taahl content/claw sketch with 1 dof.webp">
+
+            </figure>
+            <figure>
+                <img src="Wicked taahl content/claw in cad.webp">
+            </figure>
+        </div>
+        <p> and in sheet metal...</p>
+        <div class="three-col">
+            <figure>
+                <img src="Wicked taahl content/claw1.webp">
+            </figure>
+            <img style="width: 30vw;" src="Wicked taahl content/claw2.gif">
+            <div>
+                <p>First and second iterations of the claw.</p>
+                <p>On the second edition I widened the contact surface area and added a rubber sheet for improved grip.</p>
+                <p>I ended up manufacturing another claw with better tolerances and slightly tighter joints to get rid of some the shifting it was experiencing before. But more on that later!</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+       <h1>Drive: Drive Motors and Chassis</h1>
+       <p>I want to minimize inefficiencies in the motors, so I need to ensure they don’t experience any unnecessaryradial forces. In this case I couldn’t simply support the wheels due to space limitations, the next best thing was to use Saint-Venant’s principle to determine how far away I should position the motors, shaft support, and wheel.</p>
+       <img src="Wicked taahl content/saint venants.png">
+       <p>The body was also metal laser cut, bent, and riveted together.</p>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1>Assembly and Refinement</h1>
+        <div class="two-col">
+            <div>
+                <img src="Wicked taahl content/powder coating.webp">
+                <p>Powder coated the chassis and claw linkage and painted a grasshopper face on the front of the claw (a nod to one of my original ideas). As competition day drew closer I named my robot “Wicked Taahl” 
+I proceeded with some wire management and practicing my driving skills.</p>
+            </div>
+            <img src="Wicked taahl content/grasshopper face.webp">
+
+        </div>
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1>Competition Day!</h1>
+        <img src="Wicked taahl content/the wizard and I.jpg">
+    </section>
+    <hr>
+
+    <section class="section noto-sans-display">
+        <h1> Takeaways and Final Thoughts </h1>
+        <p>This build experience has been so incredibly formative for me. I learned how to justify my design choices with mathematical analysis, become proficient on the mill and lathe, and understand the importance of design within the constraint of manufacturing capabilities. I strengthened my ability to ideate and take a wide range of potential solutions into consideration as I saw my robot come to life!</p>
+    </section>
+    </main>
+
+
+
+</body>
