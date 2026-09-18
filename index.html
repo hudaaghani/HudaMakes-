@@ -5,6 +5,8 @@
 		<title>Huda Makes</title>
 		<meta name="viewport" context="width=device-width, initial-scale=1.0"/> 
         <link rel="stylesheet" href="style.css">
+        <!-- clean the address bar after arriving from the old HudaAbdelghaniHomePage.html link -->
+        <script>if (location.search === "?home") history.replaceState(null, "", "/" + location.hash);</script>
         <!-- adding fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
