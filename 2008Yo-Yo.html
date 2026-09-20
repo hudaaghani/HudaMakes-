@@ -30,15 +30,49 @@
 
                 <section class="section noto-sans-display">
                     <h1>Project Summary</h1>
-                    <p>Built for 2.008 (Design and Manufacturing II), these Lego-themed yoyo's were designed and built alongside five other students. Click <a href="yoyos/Team B Report.pdf" target="_blank">Here</a>  to see the full project report, outlining all of the analysis and design choices that lead to the final yo-yos.</p>
-                    <p> <span class="bolded-p">Class Requirements: </span>Design a yo-yo for mass manufacturing by injection molding and thermal forming, submit 50 yo-yo's with a proper pressfit.</p>
+                    <p>Built for 2.008 (Design and Manufacturing II), these Lego-themed yoyo's were designed and manufacturedr alongside five other students. Click <a href="yoyos/Team B Report.pdf" target="_blank">Here</a>  to see the full project report, outlining all of the analysis and design choices that lead to the final yo-yos.</p>
+                    <p> <span class="bolded-p">Class Requirements: </span>Design a yo-yo for mass manufacturing by injection molding and thermal forming, submit 50 yo-yo's with a press fit strong enough to survive a ~4ft drop.</p>
                     <p> <span class="bolded-p">Team Requirements: </span>Design a Lego-Themed yo-yo where a pair of yo-yo's can fit together, reminiscent of the real life lego! </p>
                 </section> 
                 <hr>
 
-                <section>
+                <section class="section noto-sans-display">
                     <h1>Design</h1>
                     <p>The team spent some time coming up with different themes that we could base our yo-yo design upon. </p>
+                    <p> The concept was to make a yo-yo that is interactive, this would be acheived primarily through a window in the top half of the yoyo where the user could pivot the thermoformed knob in the top to reveal different facial expressions.</p>
+                    <img src="yoyos/meet the yoyo.png">
+                    <p>The team created a model of the yo-yo, accounting for shrinkage which a teammate ran simulations to quantify, including draft angles, optimizing for straight pull injection molding, and ensuring we were comfortably below the maximum shot size.</p>
+                    <div class="two-col">
+                    <img src="yoyos/yoyo-cross-section-1.png">
+                    <div>
+                        <ol>
+                            <li> <span class="bolded-p">The pressfit:</span> a value we averaged from past years yo-yos as well as known interference fit values off of various databases.</li>
+                            <li> <span class="bolded-p">Draft angles:</span> 2 degree draft angle on all injection molded parts.</li>
+                            <li> <span class="bolded-p">Part thickness:</span> almost perfectly uniform, excluding the material in the center which is space for a nut to enable connecting the two halves of the yo-yo, and the small step in the inner diameter of the body to maintain the height of each half of the yo-yo assembly.</li>
+                        </ol>
+                        
+                    </div>
+                    </div>
+                </section>
+                <hr>
+
+
+                <section class="section noto-sans-display">
+                    <h1> CNC Molds</h1>
+                    <p>Fusion CAM was used to create the tool paths for each part.</p>
+                    <div class="two-col">
+                        <img src="yoyos/CAM.png">
+                        <div>
+                            <p> Each mold required a CNC milled core and cavity with a few key features</p>
+                            <ul>
+                                <li>Sprue </li>
+                                <li>Runner</li>
+                                <li>Ejector pins</li>
+                                <li>Gate</li>
+                            </ul>
+                            <p>All CAD and CAM was done in Fusion 360</p>
+                        </div>
+                    </div>
                 </section>
         </main>
 
