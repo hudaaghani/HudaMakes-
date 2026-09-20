@@ -30,7 +30,7 @@
 
                 <section class="section noto-sans-display">
                     <h1>Project Summary</h1>
-                    <p>Built for 2.008 (Design and Manufacturing II), these Lego-themed yoyo's were designed and manufacturedr alongside five other students. Click <a href="yoyos/Team B Report.pdf" target="_blank">Here</a>  to see the full project report, outlining all of the analysis and design choices that lead to the final yo-yos.</p>
+                    <p>Built for 2.008 (Design and Manufacturing II), these Lego-themed yoyo's were designed and manufactured alongside five other students. Click <a href="yoyos/Team B Report.pdf" target="_blank">Here</a>  to see the full project report, outlining all of the analysis and design choices that lead to the final yo-yos.</p>
                     <p> <span class="bolded-p">Class Requirements: </span>Design a yo-yo for mass manufacturing by injection molding and thermal forming, submit 50 yo-yo's with a press fit strong enough to survive a ~4ft drop.</p>
                     <p> <span class="bolded-p">Team Requirements: </span>Design a Lego-Themed yo-yo where a pair of yo-yo's can fit together, reminiscent of the real life lego! </p>
                 </section> 
@@ -60,20 +60,84 @@
                 <section class="section noto-sans-display">
                     <h1> CNC Molds</h1>
                     <p>Fusion CAM was used to create the tool paths for each part.</p>
-                    <div class="two-col">
+                    <p> Each mold required a CNC milled core and cavity with a few key features</p>
+                    <ul>
+                        <li>Sprue </li>
+                        <li>Runner</li>
+                        <li>Openings for ejector pins</li>
+                        <li>Gate</li>
+                        <li>Through hole for shoulder bolt (aligns the overmolded nut)</li>
+                    </ul>
+                    <p>Since the interference fit was our greateest unknown, we designed the molds such that the fit will be too loose and we can remill to incrementally remove material</p>
+                
+                    <div class="three-col">
                         <img src="yoyos/CAM.png">
-                        <div>
-                            <p> Each mold required a CNC milled core and cavity with a few key features</p>
-                            <ul>
-                                <li>Sprue </li>
-                                <li>Runner</li>
-                                <li>Ejector pins</li>
-                                <li>Gate</li>
-                            </ul>
-                            <p>All CAD and CAM was done in Fusion 360</p>
-                        </div>
+                        <img src="yoyos/milling.gif">
+                        <img src="yoyos/milled mold.jpg">
+                        
+                    </div>
+                      
+
+                    
+                </section>
+
+                <hr>
+                <section class="section noto-sans-display">
+                    <h1>Injection molding</h1>
+                    <img src="yoyos/injection molding tests.jpg">
+                    <p>A series of injection molding runs allowed us to tune specs such as shot size, temperature, packing pressure cooling time etc. This process was repeated for all parts.</p>
+
+                    <div class="two-col">
+                        <img src="yoyos/window buckling.png">
+                        <p> The window was preventing a proper pressfit since it significantly reduced the rigidity of the part. At this stage we only had a few weeks until 50 yo-yos were due, so we decided to remove the window feature and focuse on acheiving a proper fit.</p>
+                    </div>
+
+                    <p>Thus we moved to a simplified design with a permanent facial expression.</p>
+                    <img src="yoyos/yoyo redesign.png">
+                </section>
+
+
+                <hr>
+                <section class="section noto-sans-display">
+                    <h1>Thermoformed parts</h1>
+                    <p>The first step was to CAD a mold for the part, which accounts for the thickness of the plastic. This was SLA printed, then I used a drill press to create small holes for proper vacuuming of the plastic onto the mold.</p>
+                    <div class="two-col">
+                        <img src="yoyos/SLA mold.jpg">
+                        <img src="yoyos/thermoform.gif">
+                    </div>
+                    <div class="two-col">
+                        <img src="yoyos/thermoforming test.jpg">
+                        <p> In order to create that iconic lego-man yellow with the provided white thermoplastic sheets, the team decided to use car vinyl adhered onto the plastic prior to molding. We ran a series of tests to tune molding conditions with the additional vinyl material. </p>
                     </div>
                 </section>
+
+                <hr>
+                <section class="section noto-sans-display">
+                    <h1>Manufactuting, Assembly & Aesthetics</h1>
+                    <div class="two-col">
+                        <img src="yoyos/color match.jpg">
+                        <div>
+                            <p>The final details entailed color matching the platic pellets for injection molding with the vinyl we'll use for the thermoforming plastic.</p>
+                            <p>We created a mass ratio of a few colors to create the color match.</p>
+
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <hr>
+                <section class="section noto-sans-display">
+                    <h1>Takeaways and Final Thoughts</h1>
+                    <div class="two-col">
+                        <img src="yoyos/poster.png">
+                        <img src="yoyos/team B master builders.jpg">
+                        
+                    </div>
+                </section>
+
+               
+
+
         </main>
 
 
